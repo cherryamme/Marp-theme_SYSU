@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/*!
+ * Marp / Marpit SYSU theme.
+ *
+ * @theme sysu
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */
+@import url("https://cdn.jsdelivr.net/gh/cherryamme/Marp-theme_SYSU@latest/styles/vs2015.min.css");
+
+svg[data-marp-fitting=svg] {
+  max-height: 580px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0 0 0;
+}
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+
+p,
+blockquote {
+  margin: 1em 0 0 0;
+}
+
+ul > li,
+ol > li {
+  margin: 0.3em 0 0 0;
+}
+ul > li > p,
+ol > li > p {
+  margin: 0.6em 0 0 0;
+}
+
+
+
+
+
+code {
+  display: inline-block;
+  font-family: "Roboto Mono", "Noto Sans JP", monospace;
+  font-size: 0.8em;
+  letter-spacing: 0;
+  margin: 0em 0.15em;
+  padding: 0em 0.2em;
+  vertical-align: baseline;
+}
+
+pre {
+  display: block;
+  margin: 1em 0 0 0;
+  min-height: 1em;
+  overflow: visible;
+}
+pre code {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 100%;
+  padding: 0.5em;
+  font-size: 0.7em;
+}
+pre code svg[data-marp-fitting=svg] {
+  max-height: calc(580px - 1em);
+}
+
+blockquote {
+  margin: 1em 0 0 0;
+  padding: 0.3em 1em;
+  position: relative;
+  color: darkslategray;
+  background-color: gainsboro;
+  border-radius: 0.3em;
+  font-size: 0.6em ;
+
+}
+blockquote::after, blockquote::before {
+  content: "“";
+  display: block;
+  font-weight: bold;
+  position: absolute;
+}
+blockquote::before {
+  top: 0;
+  left: 0;
+}
+blockquote::after {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+blockquote > *:first-child {
+  margin-top: 0;
+}
+
+mark {
+  background: transparent;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 1em 0 0 0;
+}
+table th,
+table td {
+  padding: 0.2em 0.4em;
+  border-width: 1px;
+  border-style: solid;
+}
+
+header,
+footer,
+section::after {
+  box-sizing: border-box;
+  font-size: 66%;
+  height: 70px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 10px 25px;
+  position: absolute;
+}
+
+header {
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section:not(.lead):before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 3%;
+  content: "";
+  background: linear-gradient(90deg, #053b25, #9ac7b2);
+}
+
+section {
+  background-image: url("https://cdn.jsdelivr.net/gh/cherryamme/Marp-theme_SYSU@latest/img/logo.png");
+  background-repeat: no-repeat;
+  background-position: 102% 5%;
+  background-size: auto 10%, 100% 100%;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-size: 35px;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  height: 720px;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  padding: 60px;
+  width: 1280px;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: baseline;
+  --color-background: white;
+  --color-background-stripe: rgba(0, 57, 129, 0.1);
+  --color-foreground: #064420;
+  --color-dimmed: #436455;
+  --color-highlight: #9bbd87;
+}
+section::after {
+  right: 0;
+  bottom: 0;
+  font-size: 80%;
+}
+section a,
+section mark {
+  color: var(--color-highlight);
+}
+section code {
+  background: var(--color-dimmed);
+  color: var(--color-background);
+}
+section h1{
+  text-align: center;
+}
+
+section h1 strong,
+section h2 strong,
+section h3 strong,
+section h4 strong,
+section h5 strong,
+section h6 strong {
+  color: var(--color-highlight);
+}
+section pre > code {
+  background: var(--color-dimmed);
+}
+section header,
+section footer,
+section section::after,
+section blockquote::before,
+section blockquote::after {
+  color: var(--color-dimmed);
+}
+section table th,
+section table td {
+  border-color: var(--color-foreground);
+}
+section table thead th {
+  background: var(--color-foreground);
+  color: var(--color-background);
+}
+section table tbody > tr:nth-child(odd) td,
+section table tbody > tr:nth-child(odd) th {
+  background: var(--color-background-stripe, transparent);
+}
+section > *:first-child,
+section > header:first-child + * {
+  margin-top: 0;
+}
+section[id="1"]:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 5%;
+  content: "";
+  background: linear-gradient(90deg, #053b25, #9ac7b2);
+}
+section[id="1"]:after {
+  position: absolute;
+  /* top: 0px; */
+  /* left: 0px; */
+  width: 100%;
+  height: 5%;
+  background: linear-gradient(90deg, #9ac7b2,#053b25);
+}
+
+section[id="1"] {
+  --color-background: rgb(233, 245, 236);
+  --color-background-stripe: rgba(0, 57, 129, 0.1);
+  --color-foreground: #064420;
+  --color-dimmed: #436455;
+  --color-highlight: #9bbd87;
+  --paginate: false;
+  --data-paginate: false;
+  background-blend-mode: darken ;
+  background-repeat: no-repeat;
+  background-position: 50% 5%;
+  background-size: 55% auto, 100% 100%;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 18%;
+  justify-content: space-around;
+}
+
+
+section[id="1"] h1,
+section[id="1"] h2,
+section[id="1"] h3,
+section[id="1"] h4,
+section[id="1"] h5,
+section[id="1"] h6,
+section[id="1"] p {
+  text-align: center;
+}
+
+
+section[id="1"] h1 {
+  font-size: 2.0em;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+
+section[id="1"] h1 svg[data-marp-fitting=svg],
+section[id="1"] h2 svg[data-marp-fitting=svg],
+section[id="1"] h3 svg[data-marp-fitting=svg],
+section[id="1"] h4 svg[data-marp-fitting=svg],
+section[id="1"] h5 svg[data-marp-fitting=svg],
+section[id="1"] h6 svg[data-marp-fitting=svg] {
+  --preserve-aspect-ratio: xMidYMid meet;
+}
+section[id="1"] p {
+  text-align: center;
+}
+section[id="1"] blockquote > h1,
+section[id="1"] blockquote > h2,
+section[id="1"] blockquote > h3,
+section[id="1"] blockquote > h4,
+section[id="1"] blockquote > h5,
+section[id="1"] blockquote > h6,
+section[id="1"] blockquote > p {
+  text-align: left;
+}
+section[id="1"] blockquote svg[data-marp-fitting=svg]:not([data-marp-fitting-math]) {
+  --preserve-aspect-ratio: xMinYMin meet;
+}
+section[id="1"] ul > li > p,
+section[id="1"] ol > li > p {
+  text-align: left;
+}
+section[id="1"] table {
+  margin-left: auto;
+  margin-right: auto;
+}
+section[id="1"] footer{
+  display: none;
+
+}
