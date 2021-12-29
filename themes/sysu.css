@@ -7,6 +7,7 @@
  * @size 16:9 1280px 720px
  * @size 4:3 960px 720px
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700");
 @import url("https://cdn.jsdelivr.net/gh/cherryamme/Marp-theme_SYSU@latest/styles/vs2015.min.css");
 
 svg[data-marp-fitting=svg] {
@@ -74,7 +75,7 @@ ol > li > p {
 
 code {
   display: inline-block;
-  font-family: "Roboto Mono", "Noto Sans JP", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.8em;
   letter-spacing: 0;
   margin: 0em 0.15em;
@@ -345,4 +346,22 @@ section[id="1"] table {
 section[id="1"] footer{
   display: none;
 
+}
+
+
+div.twocols {
+  margin-top: 35px;
+  column-count: 2;
+}
+div.twocols p:first-child,
+div.twocols h1:first-child,
+div.twocols h2:first-child,
+div.twocols ul:first-child,
+div.twocols ul li:first-child,
+div.twocols ul li p:first-child {
+  margin-top: 0 !important;
+}
+div.twocols p.break {
+  break-before: column;
+  margin-top: 0;
 }

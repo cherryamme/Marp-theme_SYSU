@@ -112,3 +112,30 @@ title:
 url:                    
 ---
 ```
+
+---
+# 支持双栏
+<div class="twocols">
+
+## 第一栏
+- 栏内支持列表
+- item
+<p class="break"></p>
+
+## 第二栏
+这是第二栏
+</div>
+
+
+
+
+```html
+<div class="twocols">
+## 第一栏
+- 栏内支持列表
+- item
+<p class="break"></p>
+## 第二栏
+这是第二栏
+</div>
+```
