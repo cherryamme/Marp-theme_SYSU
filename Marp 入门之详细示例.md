@@ -1,8 +1,8 @@
 ---
 marp: true
 author: Jesse
-theme: sysu
-paginate: true
+theme: sysu2
+paginate: 
 backgroundColor: 
 backgroundImage: 
 backgroundPosition:
@@ -30,6 +30,8 @@ url:
 
 
 ---
+<!-- paginate: true -->
+
 # 使用教程
 ## Marp-VsCode 插件
 在vscode上使用[Marp](https://marp.app/)
@@ -50,6 +52,7 @@ url:
 ###### H6  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 链接: [cherryamme](https://cherryamme.com)
 
 **加粗字体** 常规字体
+
 
 ---
 
