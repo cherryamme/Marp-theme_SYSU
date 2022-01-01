@@ -69,6 +69,7 @@ section:before {
 }
 
 section {
+    overflow: auto !important;
     background-image: url("https://cdn.jsdelivr.net/gh/cherryamme/Marp-theme_SYSU@latest/img/logo.png");
     background-repeat: no-repeat;
     background-position: 102% 5%;
