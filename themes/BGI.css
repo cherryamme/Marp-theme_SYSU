@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
- * Marp / Marpit SYSU2 theme.
+ * Marp / Marpit bgi theme.
  *
- * @theme sysu2
+ * @theme bgi
  * @auto-scaling true
  * @size 16:9 1280px 720px
  * @size 4:3 960px 720px
@@ -10,11 +10,11 @@
 
 @import 'default';
 @import url("https://cdn.jsdelivr.net/gh/cherryamme/Marp-theme_SYSU@latest/styles/vs2015.min.css");
-@import url('../font/fonts.css');
+/* @import url('../font/fonts.css'); */
 
 
 h1 {
-    color: #08a5ef;
+    color: #001169;
     /* font-size: 2rem; */
     font-weight: 800;
     /* line-height: 0.5; */
@@ -25,7 +25,7 @@ h1 {
 h2 {
     /* font-size: 1.5rem; */
     /* font-style: normal; */
-    color: #23a7e4;
+    color: #05338f;
     /* font-weight: 600;
     line-height: 0.5;
     margin-top: 14px;
@@ -65,15 +65,15 @@ section:before {
   width: 100%;
   height: 3%;
   content: "";
-  background: linear-gradient(90deg, #08a5ef, #b4d5e5);
+  background: linear-gradient(90deg, #02387b, #02387b7d);
 }
 
 section {
     overflow: auto !important;
-    background-image: url("https://cdn.jsdelivr.net/gh/cherryamme/Marp-theme_SYSU@latest/img/logo.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/cherryamme/Marp-theme_SYSU@latest/img/bgi-logo3.png");
     background-repeat: no-repeat;
-    background-position: 102% 5%;
-    background-size: auto 10%, 100% 100%;
+    background-position: 98% 5%;
+    background-size: auto 4%, 100% 100%;
   }
 
 
@@ -83,13 +83,13 @@ h3 strong,
 h4 strong,
 h5 strong,
 h6 strong {
-    color: #08a5ef;
-    background-color: #bae2d0;
+    color: #00bfff;
+    background-color: #ebf1f8;
 }
 mark,
 strong {
-  color: #08a5ef;
-  background-color: #bae2d0;
+  color: #05338f;
+  background-color: #ebf1f8;
 }
 
 code {
@@ -97,12 +97,12 @@ code {
 }
 
 section[id='1'] {
-    background-image: "Marp-theme_SYSU/img/logo-single.png";
+    background-image: url("https://cdn.jsdelivr.net/gh/cherryamme/Marp-theme_SYSU@latest/img/bgi-logo3.png");
     background-repeat: no-repeat;
-    background-color: #e7fdf0;
+    background-color: #e3f0ff;
     background-blend-mode: darken ;
-    background-position: 45% 5%;
-    background-size: 55% auto, 100% 100%;
+    background-position: 45% 15%;
+    background-size: 40% auto, 100% 100%;
     text-align: center;
     justify-content: space-between;
     padding-top: 24%;

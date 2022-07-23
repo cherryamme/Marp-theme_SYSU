@@ -1,7 +1,7 @@
 ---
 marp: true
 author: Jesse
-theme: sysu2
+theme: bgi
 paginate: 
 backgroundColor: 
 backgroundImage: 
@@ -23,7 +23,7 @@ url:
 ---
 
 
-# Marp 中山大学模板🎈🎃
+# Marp 华大基因模板🎈🎃
 
 ###### 本文档是 Jesse 设计的 Marp-theme 的 **Demo 文件**;
 ###### 欢迎使用
